@@ -1,0 +1,19 @@
+<h1>Count Page</h1>
+<br>
+<a href="{% url 'home' %}">BACK TO HOMEPAGE</a>
+<br>
+
+<h2>Your Text </h2>
+{{fulltext}}<br>
+<br>
+<h2>Words Count</h2>
+Total word = {{words}}
+<br><br>
+
+{% for key,value in word_dictionary %}
+
+{{key}} == {{value}}<br>
+
+{% endfor %}
+
+<a href="{% url 'about' %}">ABOUTPAGE</a>

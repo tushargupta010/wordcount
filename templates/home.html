@@ -1,0 +1,10 @@
+<h1>WordCount</h1>
+Welcome to wordcount website...<br>
+{{ name }}<br>
+<br>
+<form action="{% url 'count' %}">
+  <!-- action="{% url 'count' %}" for name in urls.py file -->
+  <!-- action="count" for urlpatterns -->
+  <textarea name="fulltextarea" rows="10" cols="40"></textarea><br>
+  <input type="submit" name="countbutton" value="Count!!!" /><br>
+</form>
